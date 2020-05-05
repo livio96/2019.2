@@ -1,0 +1,35 @@
+
+.facets-browse-category-heading-list-header
+{
+	display: table;
+	/*padding-bottom: $sc-padding-lv3;*/
+}
+
+.facets-browse-category-heading-main-description
+{
+	width: auto;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.facets-browse-category-heading-main-description h2
+{
+	text-transform: none;
+	/*font-weight: normal;*/
+	display: block;
+	padding: 0;
+	font-size: $sc-font-size-xl;
+	@media (min-width: $screen-md-min)
+	{
+		padding: 0;
+	}
+}
+
+.facets-browse-category-heading-main-image
+{
+	display: none;
+
+	@media (min-width: $screen-md-min)
+	{
+		display: inherit;
+	}
+}

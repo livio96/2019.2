@@ -1,0 +1,30 @@
+.item-relations-correlated {
+	position: relative;
+}
+
+.item-relations-correlated .bx-controls-direction {
+    text-align: right;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.item-relations-correlated h3 {
+    margin-bottom: $sc-margin-lv6;
+    text-transform: uppercase;
+    text-align: center;
+	color: $sc-color-primary;
+
+	&:after{
+    	content: '';
+	    display: block;
+	    position: relative;
+	    border: 2px solid $sc-color-primary;
+	    text-align: center;
+	    width: 10%;
+	    margin: 15px auto;
+    }
+}
+
+.item-relations-correlated .global-views-star-rating {
+    margin: 0 auto;
+    display: inline-block;
+}

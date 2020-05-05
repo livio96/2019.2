@@ -1,0 +1,98 @@
+{
+	"name": "SiteSession",
+	"fantasyName": "Site.Session",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "set the facets for search",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/SiteSession.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/SiteSession/Configuration/MasterFacets.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SiteSession/Templates/telquest_sitesession_sitesession.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/SiteSession/Templates/telquest_sitesession_sitesession.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/SiteSession/Templates/telquest_sitesession_sitesession.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/SiteSession/Sass/_sitesession-sitesession.scss",
+			"myaccount": "Modules/SiteSession/Sass/_sitesession-sitesession.scss",
+			"checkout": "Modules/SiteSession/Sass/_sitesession-sitesession.scss"
+		},
+		"files": [
+			"Modules/SiteSession/Sass/_sitesession-sitesession.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/SiteSession/JavaScript/TelQuest.SiteSession.SiteSession.js",
+			"myaccount": "Modules/SiteSession/JavaScript/TelQuest.SiteSession.SiteSession.js",
+			"checkout": "Modules/SiteSession/JavaScript/TelQuest.SiteSession.SiteSession.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SiteSession/JavaScript/TelQuest.SiteSession.SiteSession.js",
+					"Modules/SiteSession/JavaScript/SiteSession.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/SiteSession/JavaScript/TelQuest.SiteSession.SiteSession.js",
+					"Modules/SiteSession/JavaScript/SiteSession.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/SiteSession/JavaScript/TelQuest.SiteSession.SiteSession.js",
+					"Modules/SiteSession/JavaScript/SiteSession.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/SiteSession/SuiteScript/TelQuest.SiteSession.SiteSession.js",
+		"files": [
+			"Modules/SiteSession/SuiteScript/TelQuest.SiteSession.SiteSession.js",
+			"Modules/SiteSession/SuiteScript/SiteSession.ServiceController.js",
+			"Modules/SiteSession/SuiteScript/SiteSession.ReorderItems.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/SiteSession@1.0.0",
+	"activation_id": "4",
+	"extension_id": "402"
+}

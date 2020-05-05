@@ -1,0 +1,185 @@
+{
+	"name": "FakeMatrix",
+	"fantasyName": "Fake Matrix",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "set the item options",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/FakeMatrix.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/FakeMatrix/Configuration/FakeMatrix.Configuration.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FakeMatrix/Templates/telquest_fakematrix_fakematrix.tpl",
+					"Modules/FakeMatrix/Templates/telquest_fakematrix_cart_quickaddtocart.tpl",
+					"Modules/FakeMatrix/Templates/telquest_fakematrix_information.tpl",
+					"Modules/FakeMatrix/Templates/product_details_options_selector.tpl",
+					"Modules/FakeMatrix/Templates/product_details_quickview.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/FakeMatrix/Templates/telquest_fakematrix_fakematrix.tpl",
+					"Modules/FakeMatrix/Templates/telquest_fakematrix_cart_quickaddtocart.tpl",
+					"Modules/FakeMatrix/Templates/telquest_fakematrix_information.tpl",
+					"Modules/FakeMatrix/Templates/product_details_options_selector.tpl",
+					"Modules/FakeMatrix/Templates/product_details_quickview.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/FakeMatrix/Templates/telquest_fakematrix_fakematrix.tpl",
+					"Modules/FakeMatrix/Templates/telquest_fakematrix_cart_quickaddtocart.tpl",
+					"Modules/FakeMatrix/Templates/telquest_fakematrix_information.tpl",
+					"Modules/FakeMatrix/Templates/product_details_options_selector.tpl",
+					"Modules/FakeMatrix/Templates/product_details_quickview.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/FakeMatrix/Sass/_fakematrix-fakematrix.scss",
+			"myaccount": "Modules/FakeMatrix/Sass/_fakematrix-fakematrix.scss",
+			"checkout": "Modules/FakeMatrix/Sass/_fakematrix-fakematrix.scss"
+		},
+		"files": [
+			"Modules/FakeMatrix/Sass/_fakematrix-fakematrix.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/FakeMatrix/JavaScript/TelQuest.FakeMatrix.FakeMatrix.js",
+			"myaccount": "Modules/FakeMatrix/JavaScript/TelQuest.FakeMatrix.FakeMatrix.js",
+			"checkout": "Modules/FakeMatrix/JavaScript/TelQuest.FakeMatrix.FakeMatrix.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FakeMatrix/JavaScript/TelQuest.FakeMatrix.FakeMatrix.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Cart.QuickAddToCart.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Configuration.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Item.KeyMapping.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Item.Model.Url.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ItemRelations.Correlated.Collection.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ItemRelations.Related.Collection.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.LiveOrder.Line.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.LiveOrder.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.MyAccount.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Product.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductDetails.Full.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductLine.Common.Image.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductLine.Common.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductLine.Url.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductViews.Price.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.QuickAdd.ItemsSearcher.Plugins.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.QuickAdd.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.RequestQuoteWizard.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Transaction.Line.Model.js",
+					"Modules/FakeMatrix/JavaScript/ItemRelations.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductDetails.Router.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.CustomList.Values.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Information.Tabs.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/FakeMatrix/JavaScript/TelQuest.FakeMatrix.FakeMatrix.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Cart.QuickAddToCart.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Configuration.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Item.KeyMapping.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Item.Model.Url.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ItemRelations.Correlated.Collection.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ItemRelations.Related.Collection.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.LiveOrder.Line.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.LiveOrder.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.MyAccount.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Product.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductDetails.Full.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductLine.Common.Image.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductLine.Common.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductLine.Url.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductViews.Price.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.QuickAdd.ItemsSearcher.Plugins.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.QuickAdd.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.RequestQuoteWizard.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Transaction.Line.Model.js",
+					"Modules/FakeMatrix/JavaScript/ItemRelations.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductDetails.Router.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.CustomList.Values.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Information.Tabs.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/FakeMatrix/JavaScript/TelQuest.FakeMatrix.FakeMatrix.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Cart.QuickAddToCart.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Configuration.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Item.KeyMapping.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Item.Model.Url.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ItemRelations.Correlated.Collection.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ItemRelations.Related.Collection.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.LiveOrder.Line.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.LiveOrder.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.MyAccount.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Product.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductDetails.Full.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductLine.Common.Image.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductLine.Common.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductLine.Url.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductViews.Price.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.QuickAdd.ItemsSearcher.Plugins.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.QuickAdd.View.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.RequestQuoteWizard.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Transaction.Line.Model.js",
+					"Modules/FakeMatrix/JavaScript/ItemRelations.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.ProductDetails.Router.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.CustomList.Values.Model.js",
+					"Modules/FakeMatrix/JavaScript/FakeMatrix.Information.Tabs.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/FakeMatrix/SuiteScript/TelQuest.FakeMatrix.FakeMatrix.js",
+		"files": [
+			"Modules/FakeMatrix/SuiteScript/TelQuest.FakeMatrix.FakeMatrix.js",
+			"Modules/FakeMatrix/SuiteScript/FakeMatrix.ServiceController.js",
+			"Modules/FakeMatrix/SuiteScript/FakeMatrix.LiveOrder.Model.js",
+			"Modules/FakeMatrix/SuiteScript/FakeMatrix.ProductList.Item.Search.js",
+			"Modules/FakeMatrix/SuiteScript/FakeMatrix.Quote.Model.js",
+			"Modules/FakeMatrix/SuiteScript/FakeMatrix.StoreItem.Model.js",
+			"Modules/FakeMatrix/SuiteScript/FakeMatrix.byteLength.js",
+			"Modules/FakeMatrix/SuiteScript/FakeMatrix.SuiteletProxy.js",
+			"Modules/FakeMatrix/SuiteScript/FakeMatrix.CustomList.Values.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/FakeMatrix@1.0.0",
+	"activation_id": "4",
+	"extension_id": "301"
+}

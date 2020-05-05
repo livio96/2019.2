@@ -1,0 +1,15 @@
+{
+    "credentials": {
+        "user_agent": "sc-theme-devtools/2019.2.0",
+        "email": "lbeqiri@telquestintl.com",
+        "account": "586038",
+        "role": 1076,
+        "hostname": "586038.restlets.api.netsuite.com",
+        "website": "2",
+        "domain": "www.telquestintl.com",
+        "webapp_id": "9318793",
+        "target_folder": "9318793",
+        "is_scis": false,
+        "roleId": 1076
+    }
+}

@@ -1,0 +1,70 @@
+{
+	"name": "ExtendOrderHistory",
+	"fantasyName": "ExtendOrderHistory",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "extends the order history model",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ExtendOrderHistory.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ExtendOrderHistory/Templates/telquest_extendorderhistory_extendorderhistory.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/ExtendOrderHistory/Sass/_extendorderhistory-extendorderhistory.scss"
+		},
+		"files": [
+			"Modules/ExtendOrderHistory/Sass/_extendorderhistory-extendorderhistory.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/ExtendOrderHistory/JavaScript/TelQuest.ExtendOrderHistory.ExtendOrderHistory.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ExtendOrderHistory/JavaScript/TelQuest.ExtendOrderHistory.ExtendOrderHistory.js",
+					"Modules/ExtendOrderHistory/JavaScript/ExtendOrderHistory.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ExtendOrderHistory/SuiteScript/TelQuest.ExtendOrderHistory.ExtendOrderHistory.js",
+		"files": [
+			"Modules/ExtendOrderHistory/SuiteScript/TelQuest.ExtendOrderHistory.ExtendOrderHistory.js",
+			"Modules/ExtendOrderHistory/SuiteScript/ExtendOrderHistory.ServiceController.js",
+			"Modules/ExtendOrderHistory/SuiteScript/ExtendOrderHistory.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/ExtendOrderHistory@1.0.0",
+	"activation_id": "4",
+	"extension_id": "1001"
+}

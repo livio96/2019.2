@@ -1,0 +1,68 @@
+{
+    "name": "WebPrice",
+    "fantasyName": "Web Price",
+    "vendor": "TelQuest",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "19.2.0",
+        "SCS": "19.2.0"
+    },
+    "version": "1.0.0",
+    "description": "This Extension can be used to pull the best price for logged in customers",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/WebPrice.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/WebPrice/Configuration/WebPrice.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/WebPrice/Templates/telquest_webprice_webprice.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/WebPrice/Sass/_webprice-webprice.scss"
+        },
+        "files": [
+            "Modules/WebPrice/Sass/_webprice-webprice.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/WebPrice/JavaScript/TelQuest.WebPrice.WebPrice.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/WebPrice/JavaScript/TelQuest.WebPrice.WebPrice.js",
+                    "Modules/WebPrice/JavaScript/WebPrice.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/WebPrice/SuiteScript/TelQuest.WebPrice.WebPrice.js",
+        "files": [
+            "Modules/WebPrice/SuiteScript/TelQuest.WebPrice.WebPrice.js",
+            "Modules/WebPrice/SuiteScript/WebPrice.ServiceController.js"
+        ]
+    }
+}

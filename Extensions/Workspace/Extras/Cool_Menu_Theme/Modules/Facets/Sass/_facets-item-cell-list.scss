@@ -1,0 +1,120 @@
+.facets-item-cell-list {
+	@extend .row;
+	@extend .item-cell;
+	margin: 0;
+	@media (max-width: $screen-xs-min) {
+		padding: $sc-padding-lv3 0px;
+	}
+
+	.cart-quickaddtocart-price {
+		margin-bottom:$sc-margin-lv2;
+	}
+
+	.product-line-stock {
+		clear:both;
+	}
+	.mpn-number{
+		vertical-align: middle;
+	    line-height: 28px;
+	    float: left;
+	    margin-right: $sc-margin-lv4;
+	}
+}
+
+.facets-item-cell-list-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-list-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-list-left {
+	@extend .col-xs-4;
+	@extend .col-sm-3;
+	@extend .col-md-3;
+}
+
+.facets-item-cell-list-right {
+	@extend .col-xs-8;
+	@extend .col-sm-9;
+	@extend .col-md-9;
+
+	.item-views-price {
+		text-align:left;
+	}
+}
+
+.facets-item-cell-list-image-wrapper {
+	position:relative;
+	text-align:center;
+}
+
+.facets-item-cell-list-stock-message {
+	text-align:left;
+}
+
+.facets-item-cell-list-details {
+	text-align:center;
+}
+
+.facets-item-cell-list-image {
+	width:100%;
+	height:auto;
+	padding: $sc-padding-lv3;
+	background-color: $sc-neutral-shade-0;
+}
+
+.facets-item-cell-list-title {
+	@extend .item-cell-title;
+	text-align:left;
+	font-weight: $sc-font-weight-bold;
+}
+
+.facets-item-cell-list-price {
+	@extend .small-price;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.facets-item-cell-list-rating {
+	text-align:center;
+	display: inline-block;
+}
+
+
+.facets-item-cell-list {
+	.global-views-star-rating-area {
+		/*margin-bottom:$sc-margin-lv2;*/
+	}
+}
+.facets-item-cell-list-name{
+	font-weight: $sc-font-weight-semibold;
+    font-size: $sc-font-size-m;
+}
+.facets-item-cell-list-right  span.product-views-price-exact, .facets-item-cell-list-right  span.product-views-price-range {
+    width: 100%;
+    float: left;
+}
+.facets-item-cell-list-right .product-views-price-exact .product-views-price-lead, .facets-item-cell-list-right .product-views-price-range .product-views-price-lead {
+    font-size: $sc-font-size-xxl;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.list-item-description {
+    margin: 8px 0;
+    margin-bottom: 0;
+}
+.list-item-description p {
+    font-size: $sc-font-size-xs;
+    line-height: normal;
+}
+.facets-item-cell-list-content-left{
+	padding: $sc-padding-lv3;
+}
+.facets-item-cell-list-container:hover {
+    background: $sc-ink3;
+}
+.sec_product_reviews_form .facets-item-cell-list-container .facets-item-cell-list-content-right {
+    display: none;
+}
+.facets-item-cell-list .facets-item-cell-grid-image{max-width: 225px;width: 100%;}

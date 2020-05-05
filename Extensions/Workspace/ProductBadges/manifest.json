@@ -1,0 +1,97 @@
+{
+	"name": "ProductBadges",
+	"fantasyName": "Product Badges",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "set the badges for items",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ProductBadges.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ProductBadges/Configuration/ItemBadges.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ProductBadges/Templates/telquest_productbadges_productbadges.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/ProductBadges/Templates/telquest_productbadges_productbadges.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/ProductBadges/Templates/telquest_productbadges_productbadges.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ProductBadges/Sass/_productbadges-productbadges.scss",
+			"myaccount": "Modules/ProductBadges/Sass/_productbadges-productbadges.scss",
+			"checkout": "Modules/ProductBadges/Sass/_productbadges-productbadges.scss"
+		},
+		"files": [
+			"Modules/ProductBadges/Sass/_productbadges-productbadges.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ProductBadges/JavaScript/TelQuest.ProductBadges.ProductBadges.js",
+			"myaccount": "Modules/ProductBadges/JavaScript/TelQuest.ProductBadges.ProductBadges.js",
+			"checkout": "Modules/ProductBadges/JavaScript/TelQuest.ProductBadges.ProductBadges.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ProductBadges/JavaScript/TelQuest.ProductBadges.ProductBadges.js",
+					"Modules/ProductBadges/JavaScript/ProductBadges.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/ProductBadges/JavaScript/TelQuest.ProductBadges.ProductBadges.js",
+					"Modules/ProductBadges/JavaScript/ProductBadges.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/ProductBadges/JavaScript/TelQuest.ProductBadges.ProductBadges.js",
+					"Modules/ProductBadges/JavaScript/ProductBadges.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ProductBadges/SuiteScript/TelQuest.ProductBadges.ProductBadges.js",
+		"files": [
+			"Modules/ProductBadges/SuiteScript/TelQuest.ProductBadges.ProductBadges.js",
+			"Modules/ProductBadges/SuiteScript/ProductBadges.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/ProductBadges@1.0.0",
+	"activation_id": "4",
+	"extension_id": "401"
+}

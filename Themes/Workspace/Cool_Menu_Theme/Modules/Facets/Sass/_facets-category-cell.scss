@@ -1,0 +1,48 @@
+.facets-category-cell
+{
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-left: $sc-margin-lv2;
+	padding-right: $sc-margin-lv2;
+	text-align: center;
+	margin-bottom: $sc-margin-lv6;
+	width: 100%;
+
+	@media (min-width: $screen-xs-min)
+	{
+		width: 50%;
+	}
+	@media (min-width: $screen-sm-min)
+	{
+		width: 25%;
+	}
+
+}
+
+
+
+.facets-category-cell-image
+{
+	width: auto;
+	height: auto;
+    max-height: 150px;
+    transition: all 0.3s;
+}
+
+.facets-category-cell-title
+{
+	padding: $sc-padding-lv2 $sc-padding-lv1 * 0;
+	text-align: center;
+    min-height: 60px;
+    display: table;
+    width: 100%;
+}
+
+
+.facets-category-cell .facets-category-cell-title a{
+	color: $sc-color-text;
+    font-weight: 600;
+    display: table-cell;
+    vertical-align: middle;
+}

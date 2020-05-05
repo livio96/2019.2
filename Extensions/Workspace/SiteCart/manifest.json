@@ -1,0 +1,98 @@
+{
+    "name": "SiteCart",
+    "fantasyName": "SiteCart",
+    "vendor": "TelQuest",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "19.2.0",
+        "SCS": "19.2.0"
+    },
+    "description": "My cool extension does magic!",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/SiteCart.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": []
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/SiteCart/Sass/_sitecart-sitecart.scss",
+            "myaccount": "Modules/SiteCart/Sass/_sitecart-sitecart.scss",
+            "checkout": "Modules/SiteCart/Sass/_sitecart-sitecart.scss"
+        },
+        "files": [
+            "Modules/SiteCart/Sass/_sitecart-sitecart.scss",
+            "Modules/SiteCart/Sass/_site.cart_detailed.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/SiteCart/Templates/telquest_sitecart_sitecart.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/SiteCart/Templates/telquest_sitecart_sitecart.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/SiteCart/Templates/telquest_sitecart_sitecart.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/SiteCart/JavaScript/TelQuest.SiteCart.SiteCart.js",
+            "myaccount": "Modules/SiteCart/JavaScript/TelQuest.SiteCart.SiteCart.js",
+            "checkout": "Modules/SiteCart/JavaScript/TelQuest.SiteCart.SiteCart.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/SiteCart/JavaScript/TelQuest.SiteCart.SiteCart.js",
+                    "Modules/SiteCart/JavaScript/SiteCart.View.js",
+                    "Modules/SiteCart/JavaScript/HidePrice.Cart.QuickAddToCartView.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/SiteCart/JavaScript/TelQuest.SiteCart.SiteCart.js",
+                    "Modules/SiteCart/JavaScript/SiteCart.View.js",
+                    "Modules/SiteCart/JavaScript/HidePrice.Cart.QuickAddToCartView.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/SiteCart/JavaScript/TelQuest.SiteCart.SiteCart.js",
+                    "Modules/SiteCart/JavaScript/SiteCart.View.js",
+                    "Modules/SiteCart/JavaScript/HidePrice.Cart.QuickAddToCartView.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/SiteCart/SuiteScript/TelQuest.SiteCart.SiteCart.js",
+        "files": [
+            "Modules/SiteCart/SuiteScript/TelQuest.SiteCart.SiteCart.js",
+            "Modules/SiteCart/SuiteScript/SiteCart.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\SiteCart"
+}

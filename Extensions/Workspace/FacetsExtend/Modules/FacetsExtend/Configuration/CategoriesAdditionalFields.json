@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "modifications": [
+    {
+      "target": "$.resource.fields.commercecategory",
+      "action": "add",
+      "value": "custrecord_description_for_brands"
+    },{
+      "target": "$.resource.fields.commercecategory",
+      "action": "add",
+      "value": "custrecord_hide_from_navigation"
+    }
+  ]
+}

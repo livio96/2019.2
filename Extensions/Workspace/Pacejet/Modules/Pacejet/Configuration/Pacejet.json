@@ -1,0 +1,18 @@
+{
+    "type": "object",
+	 "subtab": {
+    "id": "pacejet",
+    "title": "Pacejet",
+    "group": "customSettings"
+  },
+    "properties": {
+        "pacejet.freeshipping": {
+            "group": "customSettings",
+            "type": "string",
+            "subtab": "pacejet",
+            "title": "Free Shipping Method",
+            "default": "77004"
+        }
+    }
+}
+

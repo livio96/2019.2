@@ -1,0 +1,69 @@
+{
+	"name": "WebStockNotification",
+	"fantasyName": "Web Stock Notification",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "set the stock notification ",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/WebStockNotification.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/WebStockNotification/Templates/telquest_webstocknotification_webstocknotification.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/WebStockNotification/Sass/_webstocknotification-webstocknotification.scss"
+		},
+		"files": [
+			"Modules/WebStockNotification/Sass/_webstocknotification-webstocknotification.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/WebStockNotification/JavaScript/TelQuest.WebStockNotification.WebStockNotification.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/WebStockNotification/JavaScript/TelQuest.WebStockNotification.WebStockNotification.js",
+					"Modules/WebStockNotification/JavaScript/WebStockNotification.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/WebStockNotification/SuiteScript/TelQuest.WebStockNotification.WebStockNotification.js",
+		"files": [
+			"Modules/WebStockNotification/SuiteScript/TelQuest.WebStockNotification.WebStockNotification.js",
+			"Modules/WebStockNotification/SuiteScript/WebStockNotification.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/WebStockNotification@1.0.0",
+	"activation_id": "4",
+	"extension_id": "303"
+}

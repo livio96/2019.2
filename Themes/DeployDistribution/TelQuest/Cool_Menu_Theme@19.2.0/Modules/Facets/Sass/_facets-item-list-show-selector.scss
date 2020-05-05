@@ -1,0 +1,6 @@
+.facets-item-list-show-selector {
+	@extend .list-header-filter-input;
+}
+.facets-item-list-show-selector, .facets-item-list-sort-selector, .facets-item-list-display-selector {
+    border-color: $sc-color-theme-border;
+}

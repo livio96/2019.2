@@ -1,0 +1,27 @@
+.checkout-layout {
+	@extend %sc-layout;
+}
+
+.checkout-layout-header {
+	margin-bottom: $sc-margin-lv4;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+	
+	@media (min-width: $screen-sm-min){
+		margin-bottom: $sc-margin-lv8;
+	}
+}
+
+.checkout-layout-content, .checkout-layout-notifications{
+	@extend .container;
+}
+
+.checkout-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+
+
+.checkout-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}

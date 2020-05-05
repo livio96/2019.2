@@ -1,0 +1,24 @@
+.cart-add-to-cart-button-button{
+	@extend .button-primary;
+	@extend .button-medium;
+	width: 100%;
+ 	font-weight: $sc-font-weight-semibold;
+ 	margin-top: $sc-margin-lv4;
+    padding: $sc-padding-lv3 $sc-padding-lv6;
+    border-radius: 5px;
+    text-transform: inherit;
+    margin-right: $sc-margin-lv3;
+    @media (min-width: $screen-md-min) {
+   	    padding: $sc-padding-lv3 $sc-padding-lv6 * 3;
+    }
+}
+
+.cart-add-to-cart-button {
+	position: static;
+}
+
+.cart-add-to-cart-button-container {
+	/*@extend .col-sm-6;*/
+	width: 100%;
+	float: left;
+}

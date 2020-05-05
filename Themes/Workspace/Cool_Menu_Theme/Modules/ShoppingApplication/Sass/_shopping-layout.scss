@@ -1,0 +1,23 @@
+.shopping-layout {
+	@extend %sc-layout;
+}
+
+.shopping-layout-header {
+	margin-bottom: $sc-margin-lv6;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+}
+
+.shopping-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.shopping-layout-breadcrumb, .shopping-layout-notifications {
+	@extend .container;
+}
+
+.shopping-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+

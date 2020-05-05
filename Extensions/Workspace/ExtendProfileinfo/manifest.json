@@ -1,0 +1,70 @@
+{
+	"name": "ExtendProfileinfo",
+	"fantasyName": "ExtendProfileinfo",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "set the profile data",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ExtendProfileinfo.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ExtendProfileinfo/Templates/telquest_extendprofileinfo_extendprofileinfo.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/ExtendProfileinfo/Sass/_extendprofileinfo-extendprofileinfo.scss"
+		},
+		"files": [
+			"Modules/ExtendProfileinfo/Sass/_extendprofileinfo-extendprofileinfo.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/ExtendProfileinfo/JavaScript/TelQuest.ExtendProfileinfo.ExtendProfileinfo.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ExtendProfileinfo/JavaScript/TelQuest.ExtendProfileinfo.ExtendProfileinfo.js",
+					"Modules/ExtendProfileinfo/JavaScript/ExtendProfileinfo.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ExtendProfileinfo/SuiteScript/TelQuest.ExtendProfileinfo.ExtendProfileinfo.js",
+		"files": [
+			"Modules/ExtendProfileinfo/SuiteScript/TelQuest.ExtendProfileinfo.ExtendProfileinfo.js",
+			"Modules/ExtendProfileinfo/SuiteScript/ExtendProfileinfo.ServiceController.js",
+			"Modules/ExtendProfileinfo/SuiteScript/ExtendProfileinfo.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/ExtendProfileinfo@1.0.0",
+	"activation_id": "4",
+	"extension_id": "801"
+}

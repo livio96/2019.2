@@ -1,0 +1,72 @@
+{
+	"name": "WarrantyRegistration",
+	"fantasyName": "Warranty Registration",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "This Extension can be used to popup the Warranty data to the Users.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/WarrantyRegistration.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/WarrantyRegistration/Templates/telquest_warrantyregistration_warrantyregistration.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/WarrantyRegistration/Sass/_warrantyregistration-warrantyregistration.scss"
+		},
+		"files": [
+			"Modules/WarrantyRegistration/Sass/_warrantyregistration-warrantyregistration.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/WarrantyRegistration/JavaScript/TelQuest.WarrantyRegistration.WarrantyRegistration.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/WarrantyRegistration/JavaScript/TelQuest.WarrantyRegistration.WarrantyRegistration.js",
+					"Modules/WarrantyRegistration/JavaScript/WarrantyRegistration.View.js",
+					"Modules/WarrantyRegistration/JavaScript/WarrantyRegistration.Router.js",
+					"Modules/WarrantyRegistration/JavaScript/WarrantyRegistration.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/WarrantyRegistration/SuiteScript/TelQuest.WarrantyRegistration.WarrantyRegistration.js",
+		"files": [
+			"Modules/WarrantyRegistration/SuiteScript/TelQuest.WarrantyRegistration.WarrantyRegistration.js",
+			"Modules/WarrantyRegistration/SuiteScript/WarrantyRegistration.ServiceController.js",
+			"Modules/WarrantyRegistration/SuiteScript/WarrantyRegistration.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/WarrantyRegistration@1.0.0",
+	"activation_id": "4",
+	"extension_id": "104"
+}

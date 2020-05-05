@@ -1,0 +1,14 @@
+.product-line-sku-container {
+	margin-bottom: $sc-margin-lv1;
+	
+	.global-views-message.global-views-message-error.alert{
+		margin-bottom: 0px;
+		text-transform: capitalize;
+	}
+}
+.product-line-sku-value {
+	@extend .sc-sku-value;
+}
+.product-line-sku-label {
+	@extend .sc-sku-label;
+}

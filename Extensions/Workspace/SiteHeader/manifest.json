@@ -1,0 +1,103 @@
+{
+	"name": "SiteHeader",
+	"fantasyName": "SiteHeader",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "set the salesrep info",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/SiteHeader.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SiteHeader/Templates/telquest_siteheader_siteheader.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/SiteHeader/Templates/telquest_siteheader_siteheader.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/SiteHeader/Templates/telquest_siteheader_siteheader.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/SiteHeader/Sass/_siteheader-siteheader.scss",
+			"myaccount": "Modules/SiteHeader/Sass/_siteheader-siteheader.scss",
+			"checkout": "Modules/SiteHeader/Sass/_siteheader-siteheader.scss"
+		},
+		"files": [
+			"Modules/SiteHeader/Sass/_siteheader-siteheader.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/SiteHeader/JavaScript/TelQuest.SiteHeader.SiteHeader.js",
+			"myaccount": "Modules/SiteHeader/JavaScript/TelQuest.SiteHeader.SiteHeader.js",
+			"checkout": "Modules/SiteHeader/JavaScript/TelQuest.SiteHeader.SiteHeader.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SiteHeader/JavaScript/TelQuest.SiteHeader.SiteHeader.js",
+					"Modules/SiteHeader/JavaScript/SalesPopup.View.js",
+					"Modules/SiteHeader/JavaScript/SiteHeader.Profile.Site.View.js",
+					"Modules/SiteHeader/JavaScript/SiteHeader.View.ShowSalesRepPopup.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/SiteHeader/JavaScript/TelQuest.SiteHeader.SiteHeader.js",
+					"Modules/SiteHeader/JavaScript/SalesPopup.View.js",
+					"Modules/SiteHeader/JavaScript/SiteHeader.Profile.Site.View.js",
+					"Modules/SiteHeader/JavaScript/SiteHeader.View.ShowSalesRepPopup.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/SiteHeader/JavaScript/TelQuest.SiteHeader.SiteHeader.js",
+					"Modules/SiteHeader/JavaScript/SalesPopup.View.js",
+					"Modules/SiteHeader/JavaScript/SiteHeader.Profile.Site.View.js",
+					"Modules/SiteHeader/JavaScript/SiteHeader.View.ShowSalesRepPopup.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/SiteHeader/SuiteScript/TelQuest.SiteHeader.SiteHeader.js",
+		"files": [
+			"Modules/SiteHeader/SuiteScript/TelQuest.SiteHeader.SiteHeader.js",
+			"Modules/SiteHeader/SuiteScript/SiteHeader.ServiceController.js",
+			"Modules/SiteHeader/BackendSuiteScript/GetSalesrepForProfile.Suitelet.js",
+			"Modules/SiteHeader/SuiteScript/SiteHeader.Profile.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/SiteHeader@1.0.0",
+	"activation_id": "4",
+	"extension_id": "501"
+}

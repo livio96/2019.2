@@ -1,0 +1,31 @@
+{
+	"name": "AdditionalCategoryFields",
+	"fantasyName": "Navigation Extension",
+	"vendor": "Dev",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=19.2.0",
+		"SCS": ">=19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "Brings additoinal category fields",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/AdditionalCatModule/SuiteScript/Dev.AdditionalCategoryFields.AdditionalCatModule.js",
+		"files": [
+			"Modules/AdditionalCatModule/SuiteScript/Dev.AdditionalCategoryFields.AdditionalCatModule.js",
+			"Modules/AdditionalCatModule/SuiteScript/AdditionalCatModule.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Dev/AdditionalCategoryFields@1.0.0",
+	"activation_id": "4",
+	"extension_id": "1501"
+}

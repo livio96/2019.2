@@ -1,0 +1,108 @@
+{
+	"name": "WarrantyAddOnItems",
+	"fantasyName": "WarrantyAddOnItems",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "set the warranty options",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/WarrantyAddOnItems/Configuration/AddOnItems.Configuration.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/WarrantyAddOnItems/Templates/telquest_warrantyaddonitems_warrantyaddonitems.tpl",
+					"Modules/WarrantyAddOnItems/Templates/item_views_option_void.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/WarrantyAddOnItems/Templates/telquest_warrantyaddonitems_warrantyaddonitems.tpl",
+					"Modules/WarrantyAddOnItems/Templates/item_views_option_void.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/WarrantyAddOnItems/Templates/telquest_warrantyaddonitems_warrantyaddonitems.tpl",
+					"Modules/WarrantyAddOnItems/Templates/item_views_option_void.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/WarrantyAddOnItems/Sass/_warrantyaddonitems-warrantyaddonitems.scss",
+			"myaccount": "Modules/WarrantyAddOnItems/Sass/_warrantyaddonitems-warrantyaddonitems.scss",
+			"checkout": "Modules/WarrantyAddOnItems/Sass/_warrantyaddonitems-warrantyaddonitems.scss"
+		},
+		"files": [
+			"Modules/WarrantyAddOnItems/Sass/_warrantyaddonitems-warrantyaddonitems.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/WarrantyAddOnItems/JavaScript/TelQuest.WarrantyAddOnItems.WarrantyAddOnItems.js",
+			"myaccount": "Modules/WarrantyAddOnItems/JavaScript/TelQuest.WarrantyAddOnItems.WarrantyAddOnItems.js",
+			"checkout": "Modules/WarrantyAddOnItems/JavaScript/TelQuest.WarrantyAddOnItems.WarrantyAddOnItems.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/WarrantyAddOnItems/JavaScript/TelQuest.WarrantyAddOnItems.WarrantyAddOnItems.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.Configuration.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.ProductDetailsToQuote.View.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.ProductList.Item.Model.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.RequestQuoteWizard.Module.Comments.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/WarrantyAddOnItems/JavaScript/TelQuest.WarrantyAddOnItems.WarrantyAddOnItems.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.Configuration.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.ProductDetailsToQuote.View.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.ProductList.Item.Model.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.RequestQuoteWizard.Module.Comments.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/WarrantyAddOnItems/JavaScript/TelQuest.WarrantyAddOnItems.WarrantyAddOnItems.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.Configuration.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.ProductDetailsToQuote.View.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.ProductList.Item.Model.js",
+					"Modules/WarrantyAddOnItems/JavaScript/WarrantyAddOnItems.RequestQuoteWizard.Module.Comments.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/WarrantyAddOnItems/SuiteScript/TelQuest.WarrantyAddOnItems.WarrantyAddOnItems.js",
+		"files": [
+			"Modules/WarrantyAddOnItems/SuiteScript/TelQuest.WarrantyAddOnItems.WarrantyAddOnItems.js",
+			"Modules/WarrantyAddOnItems/SuiteScript/Application.Events.Once.js",
+			"Modules/WarrantyAddOnItems/SuiteScript/WarrantyAddOnItems.LiveOrder.Hooks.js",
+			"Modules/WarrantyAddOnItems/SuiteScript/WarrantyAddOnItems.LiveOrder.js",
+			"Modules/WarrantyAddOnItems/SuiteScript/WarrantyAddOnItems.OrderHistory.Hooks.js",
+			"Modules/WarrantyAddOnItems/SuiteScript/WarrantyAddOnItems.OrderHistory.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/WarrantyAddOnItems@1.0.0",
+	"activation_id": "4",
+	"extension_id": "103"
+}

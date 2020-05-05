@@ -1,0 +1,107 @@
+{
+	"name": "Pacejet",
+	"fantasyName": "Pacejet",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "set the shipping rate",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/TelQuest.Pacejet.Pacejet.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Pacejet/Configuration/Pacejet.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Pacejet/Templates/telquest_pacejet_pacejet.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Pacejet/Templates/telquest_pacejet_pacejet.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Pacejet/Templates/telquest_pacejet_pacejet.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Pacejet/Sass/_pacejet-pacejet.scss",
+			"myaccount": "Modules/Pacejet/Sass/_pacejet-pacejet.scss",
+			"checkout": "Modules/Pacejet/Sass/_pacejet-pacejet.scss"
+		},
+		"files": [
+			"Modules/Pacejet/Sass/_pacejet-pacejet.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Pacejet/JavaScript/TelQuest.Pacejet.Pacejet.js",
+			"myaccount": "Modules/Pacejet/JavaScript/TelQuest.Pacejet.Pacejet.js",
+			"checkout": "Modules/Pacejet/JavaScript/TelQuest.Pacejet.Pacejet.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Pacejet/JavaScript/Pacejet.View.js",
+					"Modules/Pacejet/JavaScript/TelQuest.Pacejet.Pacejet.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Pacejet/JavaScript/Pacejet.View.js",
+					"Modules/Pacejet/JavaScript/TelQuest.Pacejet.Pacejet.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Pacejet/JavaScript/Pacejet.View.js",
+					"Modules/Pacejet/JavaScript/TelQuest.Pacejet.Pacejet.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Pacejet/SuiteScript/TelQuest.Pacejet.Pacejet.js",
+		"files": [
+			"Modules/Pacejet/SuiteScript/TelQuest.Pacejet.Pacejet.js",
+			"Modules/Pacejet/SuiteScript/TelQuest.Pacejet.Pacejet.Carrier.Model.js",
+			"Modules/Pacejet/SuiteScript/TelQuest.Pacejet.Pacejet.Configuration.js",
+			"Modules/Pacejet/SuiteScript/TelQuest.Pacejet.Pacejet.DataSource.LiveOrder.js",
+			"Modules/Pacejet/SuiteScript/TelQuest.Pacejet.Pacejet.Hooks.LiveOrder.js",
+			"Modules/Pacejet/SuiteScript/TelQuest.Pacejet.Pacejet.Model.js",
+			"Modules/Pacejet/SuiteScript/TelQuest.Pacejet.Pacejet.RequestBuilder.js",
+			"Modules/Pacejet/SuiteScript/TelQuest.Pacejet.Pacejet.ServiceController.js",
+			"Modules/Pacejet/SuiteScript/TelQuest.Pacejet.Pacejet.Utils.js",
+			"Modules/Pacejet/ReferenceCode/Models.Checkout.js",
+			"Modules/Pacejet/ReferenceCode/Models.js",
+			"Modules/Pacejet/ReferenceCode/Pacejet.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/Pacejet@1.0.0",
+	"activation_id": "4",
+	"extension_id": "601"
+}

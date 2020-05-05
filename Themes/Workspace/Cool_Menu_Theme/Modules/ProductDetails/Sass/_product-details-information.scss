@@ -1,0 +1,190 @@
+.product-details-information-content {
+  margin-top: $sc-margin-lv6;
+	margin-bottom: $sc-margin-lv6;
+	border: 1px solid $sc-color-theme-border;
+}
+.product-details-information-tab-content{
+	.product-details-information-print-title{
+		display: none;
+	}
+}
+.product-details-information-content-tabs {
+	  @extend .content-tabs;
+	  @extend .clearfix;
+	  background-color: $sc-color-theme-background;
+
+  li.product-details-information-tab-title {
+    display: block;
+    /*margin-right: 5px;*/
+    float: left;
+    /*background: $sc-color-secondary;*/
+    border-right: 1px solid $sc-color-theme-border;
+
+    a {
+      /*background: $sc-color-secondary;*/
+      color: $sc-color-secondary;
+      border: none;
+      padding: 20px 50px 20px;
+      line-height: 0px;
+      display: block;
+      font-size: $sc-font-size-s;
+    }
+
+    &.active {
+      a {
+        background: $sc-neutral-shade-0;
+        color: $sc-color-secondary;
+      }
+
+      &:hover {
+        a {
+          border: none;
+        }
+      }
+    }
+  }
+}
+.product-details-information-tab-title {
+	@extend .content-tabs-title;
+}
+
+.product-details-information-tab-content {
+	@extend .tab-content;
+	border: none;
+  	padding: 30px;
+  	.product-details-information-tab-content-panel{
+    .product-details-information-tab-content-container{
+      p , li{
+        font-weight: 300;
+      }
+    }
+  }
+}
+.product-details-information-tab-content-panel-title{width: 100%;
+  margin: auto;margin-bottom:20px;}
+.product-details-information-tab-content-container {
+  width: 100%;
+  margin: auto;
+  ul, li {
+    list-style: disc;
+    margin: 10px;
+  }
+  p {
+    margin: 10px 0;
+    color: #000;
+  }
+  h2 {
+    margin-bottom: 15px;
+    font-size: 1.47rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  center {
+    	margin-top: $sc-margin-lv6;
+    	h3{
+    		line-height: 30px;
+    		a{
+    			color: $sc-color-primary;
+    			&:hover, &:focus, &:active{
+    				color: $sc-color-link-hover;
+    			}
+    		}
+    	}
+	}
+}
+.product-details-information-tab-content-panel {
+	@extend .tab-content-panel;
+}
+
+.product-details-information-tab-content-panel-title {
+	@extend .tab-content-panel-title;
+}
+
+.product-details-information-tab-action {
+	@extend .tab-action;
+}
+
+.product-details-information-tab-action-more{
+	@extend .tab-action-more;
+	display:none;
+	@media (min-width: $screen-sm-min){
+      display:block;
+  	}
+}
+
+.product-details-information-tab-action-less{
+	@extend .tab-action-less;
+}
+
+.product-details-information-tab-content.show {
+	.product-details-information-tab-content-panel {
+		max-height: 100%;
+	}
+	.product-details-information-tab-action-less {
+		display: block;
+	}
+	.product-details-information-tab-action-more {
+		display: none;
+	}
+}
+.product-details-information-main-bottom-banner {
+	margin-bottom: $sc-margin-lv4;
+}
+
+//Pusher button
+.product-details-information-pusher {
+	@extend .push-button-secondary;
+	margin-bottom: $sc-margin-lv3;
+	position: relative;
+	font-size: $sc-font-size-m;
+
+	i {
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		height: 26px;
+		margin-top: -12px;
+	}
+}
+.product-details-information-hint {
+	margin-top: $sc-margin-lv3;
+	color: $sc-color-copy;
+	padding-right: $sc-padding-lv3;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.product-details-information-pusher {
+	@extend .push-button-secondary;
+	margin-bottom: $sc-margin-lv3;
+	position: relative;
+	font-size: $sc-font-size-m;
+
+	i {
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		height: 26px;
+		margin-top: -12px;
+	}
+}
+
+[data-action="sc-pushing"].product-details-information-content {
+	padding-bottom: $sc-padding-lv2;
+}
+
+[data-action="sc-pushing"] .product-details-information-tab-content{
+	padding: $sc-padding-lv3 $sc-padding-lv6 $sc-padding-lv6 0;
+}
+
+.product-details-information-tab-content-container ul, .product-details-information-tab-content-container ol  {
+	margin-left: $sc-margin-lv4;
+}
+
+.product-details-information-tab-content-container ul li {
+	list-style: outside;
+}
+
+.product-details-information-tab-content-container ol li {
+	list-style: decimal;
+}

@@ -1,0 +1,74 @@
+{
+    "dbConfig": {
+        "keepalive": false,
+        "port": 7777,
+        "https": false,
+        "key": "KEYPEM",
+        "cert": "CERTPEM"
+    },
+    "scaffolding": {
+        "keepalive": false,
+        "port": 7777
+    },
+    "fetchConfig": {},
+    "extensionMode": true,
+    "preserveManifest": false,
+    "folders": {
+        "source": {
+            "source_path": "Workspace",
+            "extras_path": "Workspace/Extras"
+        },
+        "application_manifest": "Workspace/Extras",
+        "theme": "Extras",
+        "overrides": "Overrides",
+        "output": "LocalDistribution/tmp",
+        "local": "LocalDistribution",
+        "deploy": "DeployDistribution",
+        "extensions_dest_name": "Deploy_Extensions",
+        "extmech_parent": "-15",
+        "extensions_path": [
+            "Workspace/MSRPPrice",
+            "Workspace/SiteCart",
+            "Workspace/AdditionalCategoryFields",
+            "Workspace/DynamicMerchandisingZone",
+            "Workspace/ExtendOrderHistory",
+            "Workspace/ExtendLoginRegister",
+            "Workspace/ExtendProfileinfo",
+            "Workspace/FacetsExtend",
+            "Workspace/FakeMatrix",
+            "Workspace/Pacejet",
+            "Workspace/ProductBadges",
+            "Workspace/SiteHeader",
+            "Workspace/SiteHome",
+            "Workspace/SiteSession",
+            "Workspace/Warranty",
+            "Workspace/WarrantyAddOnItems",
+            "Workspace/WarrantyRegistration",
+            "Workspace/WebPrice",
+            "Workspace/WebStockNotification"
+        ],
+        "theme_path": "Workspace/Extras/Cool_Menu_Theme",
+        "overrides_path": "Workspace/Extras/Cool_Menu_Theme/Overrides",
+        "extensions_dest": "9321217"
+    },
+    "application": {},
+    "services": {
+        "EXTENSION_SERVICE": {
+            "script": "customscript_ns_sc_ext_mech_restlets",
+            "deploy": "customdeploy_ns_sc_ext_mech_restlets"
+        },
+        "WEBSITE_SERVICE": {
+            "script": "customscript_ext_mech_web_service_rest",
+            "deploy": "customdeploy_ext_mech_web_service_rest"
+        },
+        "FILE_SERVICE": {
+            "script": "customscript_ns_sc_ext_mech_restlets",
+            "deploy": "customdeploy_ns_sc_ext_mech_restlets"
+        }
+    },
+    "deploy_config": {
+        "update": true
+    },
+    "product": "gulp",
+    "config_path": "gulp/config/config.json"
+}

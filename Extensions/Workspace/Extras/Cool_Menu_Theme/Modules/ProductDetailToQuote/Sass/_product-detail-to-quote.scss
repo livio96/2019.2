@@ -1,0 +1,82 @@
+
+
+.product-detail-to-quote-add-to-quote-button {
+	@extend .button-tertiary;
+	@extend .button-medium;
+	margin-top: $sc-margin-lv4;
+	margin-left: 0;
+	font-weight: $sc-font-weight-semibold;
+	width: 100%;
+	text-align:center;
+	cursor:pointer;
+	cursor:hand;
+	padding: $sc-padding-lv3 $sc-padding-lv6;
+}
+
+.product-detail-to-quote-loading {
+	@extend .product-detail-to-quote-add-to-quote-button;
+	@extend .product-detail-to-quote-add-to-quote-button:disabled;
+	cursor: auto;
+}
+
+.quick-view-confirmation-modal .product-detail-to-quote-add-to-quote {
+	padding-left: 0;
+	padding-right: $sc-padding-lv3;
+}
+.product-details-full-actions-addtoquote{
+    .global-views-message.global-views-message-success.alert{
+           position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1050;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+        outline: 0;
+        background-color: rgba(0,0,0,0.4);
+        text-align: center;
+        margin-bottom: 0px;
+        line-height: 25px;
+
+ 		a{
+ 		    font-weight: 700;
+    		text-decoration: underline;
+ 		}
+
+        div{
+            position: relative;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #999;
+            border: 1px solid rgba(0,0,0,.2);
+            border-radius: 6px;
+            -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+            box-shadow: 0 3px 9px rgba(0,0,0,.5);
+            outline: 0;
+            padding: 30px;
+            width: 80%;
+               margin: 60px auto;
+               text-align: left;
+               vertical-align: top;
+            padding-right: 45px;
+            @media (min-width: $screen-sm-min) {
+                width:600px;
+            }
+        }
+        .global-views-message-button{
+            position: relative;
+            left: -40px;
+            z-index: 9999;
+            background: #000;
+            color: #fff;
+            margin: 85px auto;
+            outline: none;
+ 
+
+            &:hover, &:active{
+                opacity: 0.8;
+            }
+        }
+    }
+}

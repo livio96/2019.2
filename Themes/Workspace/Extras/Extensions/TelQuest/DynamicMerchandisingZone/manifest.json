@@ -1,0 +1,69 @@
+{
+	"name": "DynamicMerchandisingZone",
+	"fantasyName": "Dynamic MerchandisingZone",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "set the merchandising zone items",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/DynamicMerchandisingZone.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/DynamicMerchandisingZone/Templates/telquest_dynamicmerchandisingzone_dynamicmerchandisingzone.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/DynamicMerchandisingZone/Sass/_dynamicmerchandisingzone-dynamicmerchandisingzone.scss"
+		},
+		"files": [
+			"Modules/DynamicMerchandisingZone/Sass/_dynamicmerchandisingzone-dynamicmerchandisingzone.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/DynamicMerchandisingZone/JavaScript/TelQuest.DynamicMerchandisingZone.DynamicMerchandisingZone.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/DynamicMerchandisingZone/JavaScript/TelQuest.DynamicMerchandisingZone.DynamicMerchandisingZone.js",
+					"Modules/DynamicMerchandisingZone/JavaScript/MerchandisingZoneSliders.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/DynamicMerchandisingZone/SuiteScript/TelQuest.DynamicMerchandisingZone.DynamicMerchandisingZone.js",
+		"files": [
+			"Modules/DynamicMerchandisingZone/SuiteScript/TelQuest.DynamicMerchandisingZone.DynamicMerchandisingZone.js",
+			"Modules/DynamicMerchandisingZone/SuiteScript/DynamicMerchandisingZone.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/DynamicMerchandisingZone@1.0.0",
+	"activation_id": "4",
+	"extension_id": "102"
+}

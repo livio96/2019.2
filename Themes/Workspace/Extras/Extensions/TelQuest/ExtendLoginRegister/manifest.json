@@ -1,0 +1,70 @@
+{
+	"name": "ExtendLoginRegister",
+	"fantasyName": "ExtendLoginRegister",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "set the custom fields while registration",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ExtendLoginRegister.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/ExtendLoginRegister/Templates/telquest_extendloginregister_extendloginregister.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/ExtendLoginRegister/Sass/_extendloginregister-extendloginregister.scss"
+		},
+		"files": [
+			"Modules/ExtendLoginRegister/Sass/_extendloginregister-extendloginregister.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/ExtendLoginRegister/JavaScript/TelQuest.ExtendLoginRegister.ExtendLoginRegister.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/ExtendLoginRegister/JavaScript/TelQuest.ExtendLoginRegister.ExtendLoginRegister.js",
+					"Modules/ExtendLoginRegister/JavaScript/ExtendLoginRegister.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ExtendLoginRegister/SuiteScript/TelQuest.ExtendLoginRegister.ExtendLoginRegister.js",
+		"files": [
+			"Modules/ExtendLoginRegister/SuiteScript/TelQuest.ExtendLoginRegister.ExtendLoginRegister.js",
+			"Modules/ExtendLoginRegister/SuiteScript/ExtendLoginRegister.ServiceController.js",
+			"Modules/ExtendLoginRegister/SuiteScript/ExtendLoginRegister.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/ExtendLoginRegister@1.0.0",
+	"activation_id": "4",
+	"extension_id": "701"
+}

@@ -1,0 +1,64 @@
+define(
+	'TelQuest.FakeMatrix.FakeMatrix'
+,   [
+	'TelQuest.FakeMatrix.FakeMatrix.Item.KeyMapping',
+	'telquest_fakematrix_cart_quickaddtocart.tpl',
+	'telquest_fakematrix_information.tpl',
+    'TelQuest.FakeMatrix.FakeMatrix.ProductDetails.Router',
+    'TelQuest.FakeMatrix.FakeMatrix.Product.Model',
+    'TelQuest.FakeMatrix.FakeMatrix.LiveOrder.Line.Model',
+    'TelQuest.FakeMatrix.FakeMatrix.ProductDetails.Full.View',
+    'TelQuest.FakeMatrix.FakeMatrix.ProductLine.Common',
+    'TelQuest.FakeMatrix.FakeMatrix.Configuration',
+    'TelQuest.FakeMatrix.FakeMatrix.ProductViews.Price.View',
+    'TelQuest.FakeMatrix.FakeMatrix.ProductLine.Common.Image',
+    'TelQuest.FakeMatrix.FakeMatrix.QuickAdd.ItemsSearcher.Plugins',
+    'TelQuest.FakeMatrix.FakeMatrix.QuickAdd.View',
+    'TelQuest.FakeMatrix.FakeMatrix.ItemRelations.Related.Collection',
+    'TelQuest.FakeMatrix.FakeMatrix.ItemRelations.Correlated.Collection',
+    'TelQuest.FakeMatrix.FakeMatrix.Item.Model.Url',
+    'TelQuest.FakeMatrix.FakeMatrix.LiveOrder.Model',
+    'TelQuest.FakeMatrix.FakeMatrix.Transaction.Line.Model',
+    'TelQuest.FakeMatrix.FakeMatrix.ProductLine.Url',
+    'TelQuest.FakeMatrix.FakeMatrix.Cart.QuickAddToCart.View',
+	'Cart.QuickAddToCart.View',
+	'ProductDetails.Information.View',
+	'TelQuest.FakeMatrix.ItemRelations',
+	'TelQuest.FakeMatrix.FakeMatrix.Information.Tabs'
+	]
+,   function (
+        FakeMatrixItemKeyMapping,
+		cart_quickaddtocarttpl,
+		fakematrix_informationtpl,
+		FakeMatrixProductDetailsRouter,
+		FakeMatrixProductModel,
+		FakeMatrixLiveOrderLineModel,
+	    FakeMatrixProductDetailsFullView,
+        FakeMatrixProductLineCommon,
+        FakeMatrixConfiguration,
+		FakeMatrixProductViewsPriceView,
+		FakeMatrixProductLineCommonImage,
+		FakeMatrixQuickAddItemsSearcherPlugins,
+		FakeMatrixQuickAddView,
+		FakeMatrixItemRelationsRelatedCollection,
+		FakeMatrixItemRelationsCorrelatedCollection,
+		FakeMatrixItemModelUrl,
+		FakeMatrixLiveOrderModel,
+		FakeMatrixTransactionLineModel,
+		FakeMatrixProductLineUrl,
+		FakeMatrixCartQuickAddToCartView,
+		CartQuickAddToCartView,
+		ProductDetailsInformationView,
+		ItemRelations,
+		FakeMatrixInformationTabs
+	)
+{
+	'use strict';
+	return  {
+		mountToApp: function mountToApp (container)
+		{
+			CartQuickAddToCartView.prototype.template=cart_quickaddtocarttpl;
+			ProductDetailsInformationView.prototype.template=fakematrix_informationtpl;
+		}
+	};
+});

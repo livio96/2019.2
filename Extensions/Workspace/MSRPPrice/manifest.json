@@ -1,0 +1,94 @@
+{
+    "name": "MSRPPrice",
+    "fantasyName": "MSRPPrice",
+    "vendor": "TelQuest",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "19.2.0",
+        "SCS": "19.2.0"
+    },
+    "description": "Add msrp price",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/MSRPPrice.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": []
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/MSRPPrice/Sass/_msrpprice-msrpprice.scss",
+            "myaccount": "Modules/MSRPPrice/Sass/_msrpprice-msrpprice.scss",
+            "checkout": "Modules/MSRPPrice/Sass/_msrpprice-msrpprice.scss"
+        },
+        "files": [
+            "Modules/MSRPPrice/Sass/_msrpprice-msrpprice.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/MSRPPrice/Templates/telquest_msrpprice_msrpprice.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/MSRPPrice/Templates/telquest_msrpprice_msrpprice.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/MSRPPrice/Templates/telquest_msrpprice_msrpprice.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/MSRPPrice/JavaScript/TelQuest.MSRPPrice.MSRPPrice.js",
+            "myaccount": "Modules/MSRPPrice/JavaScript/TelQuest.MSRPPrice.MSRPPrice.js",
+            "checkout": "Modules/MSRPPrice/JavaScript/TelQuest.MSRPPrice.MSRPPrice.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/MSRPPrice/JavaScript/TelQuest.MSRPPrice.MSRPPrice.js",
+                    "Modules/MSRPPrice/JavaScript/MSRPPrice.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/MSRPPrice/JavaScript/TelQuest.MSRPPrice.MSRPPrice.js",
+                    "Modules/MSRPPrice/JavaScript/MSRPPrice.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/MSRPPrice/JavaScript/TelQuest.MSRPPrice.MSRPPrice.js",
+                    "Modules/MSRPPrice/JavaScript/MSRPPrice.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/MSRPPrice/SuiteScript/TelQuest.MSRPPrice.MSRPPrice.js",
+        "files": [
+            "Modules/MSRPPrice/SuiteScript/TelQuest.MSRPPrice.MSRPPrice.js",
+            "Modules/MSRPPrice/SuiteScript/MSRPPrice.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\MSRPPrice"
+}

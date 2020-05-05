@@ -1,0 +1,74 @@
+
+
+
+
+
+
+	.cart-item-summary-item-list-actionable-label-qty {
+
+	@extend .sc-label;
+	margin-bottom: 0;
+	display: none;
+		@media (min-width: $screen-md-min) {
+		display: table-cell;
+		vertical-align: middle;
+		}
+	}
+	.cart-item-summary-item-list-actionable-input-qty {
+	@extend .sc-value;
+
+	@media (min-width: $screen-md-min) {
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: $sc-padding-lv2;
+	}
+}
+
+.cart-item-summary-item-list-actionable-amount{
+    margin-left: 0;
+    margin-top: $sc-margin-lv2;
+    margin-bottom: $sc-margin-lv1 !important;
+	@extend .transaction-line-views-cell-actionable-amount;
+	@media (min-width: $screen-lg-min) {
+		margin-left: $sc-margin-lv5;
+		 margin-top: 0px;
+	}
+}
+
+.cart-item-summary-item-list-actionable-amount-label{
+	@extend .transaction-line-views-cell-actionable-amount-label;
+}
+
+.cart-item-summary-item-view-old-price{
+	@extend .transaction-line-views-price-old;
+}
+
+
+
+.cart-item-summary-quantity-title-help{
+	clear: both;
+	margin-top: $sc-margin-lv1;
+	display: block;
+	font-weight:$sc-font-weight-light;
+}
+
+.cart-item-summary-quantity-add {
+	@extend .quantity-input-button-add;
+}
+
+.cart-item-summary-quantity-remove {
+	@extend .quantity-input-button-remove;
+}
+
+.cart-item-summary-quantity-value {
+ 	@extend .quantity-input;
+}
+
+.cart-item-summary-promocodes .cart-promocode-list-item-container{
+	@extend .transaction-line-views-cell-actionable-amount-label;
+	padding-left: 0;
+}
+
+.cart-item-summary-promocodes .cart-promocode-list-item-code-value {
+	@extend .sc-value;
+}

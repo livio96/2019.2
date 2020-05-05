@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "subtab": {
+    "id": "webPrice",
+    "group": "catalog",
+    "title": "Stock Configuration",
+    "description": "Configurations for stock in pdp and plp"
+  },
+  "properties": {
+    "webPrice.inStockMessage": {
+      "group": "catalog",
+      "subtab": "webPrice",
+      "type": "string",
+      "title": "In Stock Message to display",
+      "description": "Message to display when an item is in stock",
+      "default": "In Stock"
+    },
+    "webPrice.outOfStockMessage": {
+      "group": "catalog",
+      "subtab": "webPrice",
+      "type": "string",
+      "title": "Out of Stock Message to display",
+      "description": "Message to display when an item is out stock",
+      "default": "Backorder Item - Call for availability"
+    }
+  }
+}

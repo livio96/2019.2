@@ -1,0 +1,71 @@
+{
+	"name": "SiteHome",
+	"fantasyName": "SiteHome",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "set the configuration for home page",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/SiteHome.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/SiteHome/Configuration/Site.Home.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SiteHome/Templates/telquest_sitehome_sitehome.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/SiteHome/Sass/_sitehome-sitehome.scss"
+		},
+		"files": [
+			"Modules/SiteHome/Sass/_sitehome-sitehome.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/SiteHome/JavaScript/TelQuest.SiteHome.SiteHome.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SiteHome/JavaScript/TelQuest.SiteHome.SiteHome.js",
+					"Modules/SiteHome/JavaScript/SiteHome.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/SiteHome/SuiteScript/TelQuest.SiteHome.SiteHome.js",
+		"files": [
+			"Modules/SiteHome/SuiteScript/TelQuest.SiteHome.SiteHome.js",
+			"Modules/SiteHome/SuiteScript/SiteHome.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/SiteHome@1.0.0",
+	"activation_id": "4",
+	"extension_id": "1301"
+}

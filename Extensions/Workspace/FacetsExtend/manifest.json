@@ -1,0 +1,125 @@
+{
+	"name": "FacetsExtend",
+	"fantasyName": "FacetsExtend",
+	"vendor": "TelQuest",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "19.2.0",
+		"SCS": "19.2.0"
+	},
+	"version": "1.0.0",
+	"description": "customize the facets",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/FacetsExtend.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/FacetsExtend/Configuration/CategoriesAdditionalFields.json",
+			"Modules/FacetsExtend/Configuration/LikeNewHelpInformation.json",
+			"Modules/FacetsExtend/Configuration/NewHelpInformation.json",
+			"Modules/FacetsExtend/Configuration/RecertifiedHelpInformation.json",
+			"Modules/FacetsExtend/Configuration/SeoConfiguration.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FacetsExtend/Templates/telquest_facetsextend_facetsextend.tpl",
+					"Modules/FacetsExtend/Templates/facets_item_cell_grid.tpl",
+					"Modules/FacetsExtend/Templates/facets_item_cell_list.tpl",
+					"Modules/FacetsExtend/Templates/facets_item_cell_table.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/FacetsExtend/Templates/telquest_facetsextend_facetsextend.tpl",
+					"Modules/FacetsExtend/Templates/facets_item_cell_grid.tpl",
+					"Modules/FacetsExtend/Templates/facets_item_cell_list.tpl",
+					"Modules/FacetsExtend/Templates/facets_item_cell_table.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/FacetsExtend/Templates/telquest_facetsextend_facetsextend.tpl",
+					"Modules/FacetsExtend/Templates/facets_item_cell_grid.tpl",
+					"Modules/FacetsExtend/Templates/facets_item_cell_list.tpl",
+					"Modules/FacetsExtend/Templates/facets_item_cell_table.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/FacetsExtend/Sass/_facetsextend-facetsextend.scss",
+			"myaccount": "Modules/FacetsExtend/Sass/_facetsextend-facetsextend.scss",
+			"checkout": "Modules/FacetsExtend/Sass/_facetsextend-facetsextend.scss"
+		},
+		"files": [
+			"Modules/FacetsExtend/Sass/_facetsextend-facetsextend.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/FacetsExtend/JavaScript/TelQuest.FacetsExtend.FacetsExtend.js",
+			"myaccount": "Modules/FacetsExtend/JavaScript/TelQuest.FacetsExtend.FacetsExtend.js",
+			"checkout": "Modules/FacetsExtend/JavaScript/TelQuest.FacetsExtend.FacetsExtend.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FacetsExtend/JavaScript/TelQuest.FacetsExtend.FacetsExtend.js",
+					"Modules/FacetsExtend/JavaScript/Facets.Translator.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.Browse.View.Tags.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.CategoryCell.View.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.ItemCell.View.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.Translator.js",
+					"Modules/FacetsExtend/JavaScript/HidePrice.Facets.ItemCell.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/FacetsExtend/JavaScript/TelQuest.FacetsExtend.FacetsExtend.js",
+					"Modules/FacetsExtend/JavaScript/Facets.Translator.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.Browse.View.Tags.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.CategoryCell.View.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.ItemCell.View.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.Translator.js",
+					"Modules/FacetsExtend/JavaScript/HidePrice.Facets.ItemCell.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/FacetsExtend/JavaScript/TelQuest.FacetsExtend.FacetsExtend.js",
+					"Modules/FacetsExtend/JavaScript/Facets.Translator.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.Browse.View.Tags.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.CategoryCell.View.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.ItemCell.View.js",
+					"Modules/FacetsExtend/JavaScript/FacetsExtend.Translator.js",
+					"Modules/FacetsExtend/JavaScript/HidePrice.Facets.ItemCell.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/FacetsExtend/SuiteScript/TelQuest.FacetsExtend.FacetsExtend.js",
+		"files": [
+			"Modules/FacetsExtend/SuiteScript/TelQuest.FacetsExtend.FacetsExtend.js",
+			"Modules/FacetsExtend/SuiteScript/FacetsExtend.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TelQuest/FacetsExtend@1.0.0",
+	"activation_id": "4",
+	"extension_id": "201"
+}

@@ -1,0 +1,15 @@
+.item-relations-cell {
+    text-align: center;
+    padding: $sc-padding-lv2;
+    border: 1px solid $sc-color-theme-border;
+    margin: 0 $sc-margin-lv1;
+    width: 218px !important;
+    background: $sc-neutral-shade-0;
+
+    .item-relations-related-item-thumbnail{
+    	img{
+    		background: $sc-neutral-shade-0;;
+    		padding: $sc-padding-lv3;
+    	}
+    }
+}
